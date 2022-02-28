@@ -4,10 +4,20 @@ variable "docker-network" {
   default     = "lb-network"
 }
 
-variable "docker-image" {
+variable "docker-image_web" {
   type        = string
-  description = "nginx image version"
+  description = "nginx web server image version"
   default     = "nginx:latest"
+}
+
+variable "docker-image_lb" {
+  type        = string
+  description = "nginx lb image version"
+  default     = "nginx:latest"
+}
+
+variable "servers_count" {
+ default = "2" 
 }
 
 
