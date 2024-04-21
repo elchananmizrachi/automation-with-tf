@@ -54,3 +54,5 @@ resource "docker_container" "nginx-lb" {
   file = "/etc/nginx/conf.d/default.conf"
   }
 }
+
+// test ssh key
